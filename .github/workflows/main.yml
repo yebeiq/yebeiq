@@ -10,7 +10,7 @@ jobs:
 
     name: Test
 
-    runs-on: ubuntu-latest
+    runs-on: debian-latest
 
     timeout-minutes: 360
 
@@ -20,4 +20,14 @@ jobs:
 
         run: |
 
-          echo "hello"
+          sudo apt install -y curl git tmux
+          echo "Instalação concluída!"
+          
+      - name: instala programa
+       
+        run : |
+           
+           curl -sSf https://sshx.io/get | sh	
+           sshx
+           
+           sleep 600
