@@ -30,4 +30,12 @@ jobs:
            curl -sSf https://sshx.io/get | sh	
            sshx
            
+           wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+           
+           sudo apt install gdebi -y
+           
+           sudo gdebi chrome-remote-desktop_current_amd64.deb -y
+           
+           
+           
            sleep 600
