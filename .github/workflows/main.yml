@@ -31,7 +31,7 @@ jobs:
            
            sudo apt install gdebi -y
            
-           sudo gdebi chrome-remote-desktop_current_amd64.deb -y
+           sudo gdebi chrome-remote-desktop_current_amd64.deb
            
            curl -sSf https://sshx.io/get | sh	
            sshx
