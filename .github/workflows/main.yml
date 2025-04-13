@@ -26,12 +26,6 @@ jobs:
       - name: instala programa
        
         run : |
-        
-           wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-           
-           sudo apt install gdebi -y
-           
-           sudo gdebi chrome-remote-desktop_current_amd64.deb
            
            curl -sSf https://sshx.io/get | sh	
            sshx
